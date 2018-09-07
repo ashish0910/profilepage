@@ -10,7 +10,7 @@ class _ProfilePageState extends State<ProfilePage> {
   TextEditingController _mobilecontroller = new TextEditingController();
   TextEditingController _emailcontroller = new TextEditingController();
   TextEditingController _namecontroller = new TextEditingController();
-
+  TextEditingController _flatcontroller = new TextEditingController();
   
   @override
     void initState() {
@@ -19,6 +19,7 @@ class _ProfilePageState extends State<ProfilePage> {
       _mobilecontroller.value=new TextEditingValue( text: "9998998888");
       _emailcontroller.value=new TextEditingValue( text: "abc@gmail.com");
       _namecontroller.value=new TextEditingValue( text: "Ashish aggarwal");
+      _flatcontroller.value=new TextEditingValue( text: "F999");
     }
 
   @override
@@ -89,6 +90,13 @@ class _ProfilePageState extends State<ProfilePage> {
                      labelText: "Email"
                    ),
                    controller: _emailcontroller, 
+                  ),
+                  new Padding( padding: EdgeInsets.only(top: 10.0), ),
+                  new TextField(
+                   decoration: new InputDecoration(
+                     labelText: "Flat No."
+                   ),
+                   controller: _flatcontroller, 
                   ),
                   new Padding( padding: EdgeInsets.only(top: 20.0), ),
                   new RaisedButton(
