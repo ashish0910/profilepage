@@ -9,6 +9,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return new MaterialApp(
       title: 'Profile Page',
+      theme: new ThemeData(
+        primaryColor: new Color(0xFF5424eb),
+      ),
       debugShowCheckedModeBanner: false,
       home: new ProfilePage(),
     );
